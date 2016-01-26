@@ -1,0 +1,2 @@
+# DergiSatis
+Dergi Satış Uygulaması
