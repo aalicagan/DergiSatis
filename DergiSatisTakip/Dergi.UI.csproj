@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{843CB32A-175F-404F-9649-25813B8AEC0E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DergiSatisTakip</RootNamespace>
+    <AssemblyName>DergiSatisTakip</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\dll\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServerCompact">
+      <HintPath>..\packages\EntityFramework.SqlServerCompact.6.1.3\lib\net45\EntityFramework.SqlServerCompact.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\packages\iTextSharp.5.5.8\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.SqlServer.Compact.4.0.8876.1\lib\net40\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboneUI\AboneDergiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboneUI\AboneDergiForm.Designer.cs">
+      <DependentUpon>AboneDergiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AboneUI\AboneHesapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboneUI\AboneHesapForm.Designer.cs">
+      <DependentUpon>AboneHesapForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AboneUI\TahakkukForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboneUI\TahakkukForm.Designer.cs">
+      <DependentUpon>TahakkukForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DergiUI\DergiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DergiUI\DergiForm.Designer.cs">
+      <DependentUpon>DergiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Generic\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\MasterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\MasterForm.Designer.cs">
+      <DependentUpon>MasterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Generic\MasterTool.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Generic\MasterTool.Designer.cs">
+      <DependentUpon>MasterTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Generic\NumericTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Parametre\AboneTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametre\AboneTypeForm.Designer.cs">
+      <DependentUpon>AboneTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parametre\BolgeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametre\BolgeForm.Designer.cs">
+      <DependentUpon>BolgeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parametre\BirimTurForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametre\BirimTurForm.Designer.cs">
+      <DependentUpon>BirimTurForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parametre\BirimForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parametre\BirimForm.Designer.cs">
+      <DependentUpon>BirimForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AboneUI\AboneForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboneUI\AboneForm.Designer.cs">
+      <DependentUpon>AboneForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboneUI\AboneDergiForm.resx">
+      <DependentUpon>AboneDergiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboneUI\AboneHesapForm.resx">
+      <DependentUpon>AboneHesapForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboneUI\TahakkukForm.resx">
+      <DependentUpon>TahakkukForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DergiUI\DergiForm.resx">
+      <DependentUpon>DergiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generic\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\MasterForm.resx">
+      <DependentUpon>MasterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Generic\MasterTool.resx">
+      <DependentUpon>MasterTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametre\AboneTypeForm.resx">
+      <DependentUpon>AboneTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametre\BolgeForm.resx">
+      <DependentUpon>BolgeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametre\BirimTurForm.resx">
+      <DependentUpon>BirimTurForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parametre\BirimForm.resx">
+      <DependentUpon>BirimForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboneUI\AboneForm.resx">
+      <DependentUpon>AboneForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Dergi.Business.ViewModel.AboneDergiViewModel.datasource" />
+    <None Include="Properties\DataSources\Dergi.Business.ViewModel.AboneHesapViewModel.datasource" />
+    <None Include="Properties\DataSources\Dergi.Model.Abone.datasource" />
+    <None Include="Properties\DataSources\Dergi.Model.AboneDergi.datasource" />
+    <None Include="Properties\DataSources\Dergi.Model.AboneHesap.datasource" />
+    <None Include="Properties\DataSources\Dergi.Model.AboneType.datasource" />
+    <None Include="Properties\DataSources\Dergi.Model.Birim.datasource" />
+    <None Include="Properties\DataSources\Dergi.Model.BirimTur.datasource" />
+    <None Include="Properties\DataSources\Dergi.Model.Bolge.datasource" />
+    <None Include="Properties\DataSources\Dergi.Model.Dergi.datasource" />
+    <None Include="Properties\DataSources\Dergi.Model.Util+IslemType.datasource" />
+    <None Include="Properties\DataSources\Dergi.Model.Util+StatusType.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dergi.Business\Dergi.Business.csproj">
+      <Project>{c9ed67b3-a113-4ab6-9018-1dcf04b251e5}</Project>
+      <Name>Dergi.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dergi.Model\Dergi.Model.csproj">
+      <Project>{b33b8502-e854-4a06-b540-91758283f067}</Project>
+      <Name>Dergi.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resource\delete.png" />
+    <Content Include="Resource\inbox.png" />
+    <Content Include="Resource\reload3.png" />
+    <Content Include="Resource\save.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    if not exist "$(TargetDir)x86" md "$(TargetDir)x86"
+    xcopy /s /y "$(SolutionDir)packages\Microsoft.SqlServer.Compact.4.0.8876.1\NativeBinaries\x86\*.*" "$(TargetDir)x86"
+    if not exist "$(TargetDir)amd64" md "$(TargetDir)amd64"
+    xcopy /s /y "$(SolutionDir)packages\Microsoft.SqlServer.Compact.4.0.8876.1\NativeBinaries\amd64\*.*" "$(TargetDir)amd64"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

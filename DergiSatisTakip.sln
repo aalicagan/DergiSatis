@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dergi.UI", "DergiSatisTakip\Dergi.UI.csproj", "{843CB32A-175F-404F-9649-25813B8AEC0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dergi.Business", "Dergi.Business\Dergi.Business.csproj", "{C9ED67B3-A113-4AB6-9018-1DCF04B251E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dergi.Model", "Dergi.Model\Dergi.Model.csproj", "{B33B8502-E854-4A06-B540-91758283F067}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{843CB32A-175F-404F-9649-25813B8AEC0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{843CB32A-175F-404F-9649-25813B8AEC0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{843CB32A-175F-404F-9649-25813B8AEC0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{843CB32A-175F-404F-9649-25813B8AEC0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9ED67B3-A113-4AB6-9018-1DCF04B251E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9ED67B3-A113-4AB6-9018-1DCF04B251E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9ED67B3-A113-4AB6-9018-1DCF04B251E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9ED67B3-A113-4AB6-9018-1DCF04B251E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B33B8502-E854-4A06-B540-91758283F067}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B33B8502-E854-4A06-B540-91758283F067}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B33B8502-E854-4A06-B540-91758283F067}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B33B8502-E854-4A06-B540-91758283F067}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
